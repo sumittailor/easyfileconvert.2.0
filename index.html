@@ -311,6 +311,18 @@
        .tool-card {
     text-align: center; /* Card content ko bhi center karein */
     } 
+        .tool-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s;
+}
+.tool-card {
+    text-align: center;
+}
+.tool-card:hover .tool-icon {
+    transform: scale(1.15);
+}
 
         /* Features Section */
         .features {
