@@ -274,7 +274,6 @@
             font-size: 2.5rem;
             color: var(--primary);
             margin-bottom: 1rem;
-            justify-content: center;
         }
 
         .tool-card h3 {
@@ -301,6 +300,17 @@
             background: var(--primary);
             color: white;
         }
+        /*extraline add*/
+        .tool-icon {
+    display: flex;
+    justify-content: center;   /* Center horizontally */
+    align-items: center;       /* Center vertically if needed */
+    transition: transform 0.3s;
+    /* Agar width fix hai toh margin: auto bhi laga sakte hain */
+    }
+       .tool-card {
+    text-align: center; /* Card content ko bhi center karein */
+    } 
 
         /* Features Section */
         .features {
