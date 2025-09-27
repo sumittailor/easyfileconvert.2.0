@@ -339,32 +339,14 @@
         .feature-item p {
             color: var(--gray);
         }
-         .feature-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        .tool-icon {
+    transition: transform 0.3s;
 }
 
-.feature-icon {
-    font-size: 36px;
-    color: var(--primary);
-    margin-bottom: 20px;
-    transition: var(--transition);
+.tool-card:hover .tool-icon {
+    transform: scale(1.15); /* Icon 15% bada ho jayega hover par */
 }
-
-.feature-card:hover .feature-icon {
-    transform: scale(1.1);
-}
-
-/* Typing effect cursor */
-.feature-title.typing::after {
-    content: '|';
-    animation: blink 0.7s infinite;
-}
-
-@keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
-}
+         
         /* CTA Section */
         .cta {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
@@ -1171,28 +1153,6 @@
             alert('Exploring all tools...\n\nThis would navigate to the tools page.');
         });
     </script>
-    <script>
-document.addEventListener('DOMContentLoaded', function () {
-  const typedElements = document.querySelectorAll('.feature-title[data-typed]');
-  
-  typedElements.forEach(el => {
-    const text = el.getAttribute('data-typed');
-    el.textContent = '';
-    el.classList.add('typing');
-    let i = 0;
-
-    function typeChar() {
-      if (i <= text.length) {
-        el.textContent = text.substring(0, i);
-        i++;
-        setTimeout(typeChar, 80);
-      } else {
-        el.classList.remove('typing'); // Remove cursor when done
-      }
-    }
-    typeChar();
-  });
-});
-</script>
+    
 </body>
 </html>
