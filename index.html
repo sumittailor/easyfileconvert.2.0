@@ -458,37 +458,8 @@
             color: #adb5bd;
             font-size: 0.9rem;
         }
-           /*-- Add this in <style> section -->*/
-    .social-icons {
-        display: flex;
-        gap: 18px;
-        margin-top: 10px;
-        justify-content: flex-start;
-    }
-    .social-icon {
-        font-size: 2rem;
-        color: #adb5bd;
-        transition: transform 0.3s, color 0.3s;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        background: transparent;
-    }
-    .social-icon:hover {
-        transform: scale(1.25) rotate(-12deg);
-        color: var(--primary);
-        background: rgba(67, 97, 238, 0.15);
-    }
-    .social-icon.facebook:hover { color: #3b5998; }
-    .social-icon.instagram:hover { color: #e4405f; }
-    .social-icon.linkedin:hover { color: #0e76a8; }
-    .social-icon.twitter:hover { color: #1da1f2; }
-    .social-icon.youtube:hover { color: #ff0000; }
-        }
-      /* Dark Mode Toggle */
+
+        /* Dark Mode Toggle */
         .dark-mode-toggle {
             position: fixed;
             bottom: 20px;
@@ -510,6 +481,7 @@
         .dark-mode-toggle:hover {
             transform: scale(1.1);
         }
+
         /* Dark Mode Styles */
         body.dark-mode {
             background-color: #121212;
@@ -607,6 +579,7 @@
                 border-bottom: 1px solid var(--light-gray);
                 border-left: 3px solid var(--primary);
             }
+        }
     </style>
 </head>
 <body>
@@ -1102,15 +1075,6 @@
                     <h3>EasyFileConvert</h3>
                     <p>Your all-in-one solution for online file processing tools, fast, reliable and secure.</p>
                 </div>
-                  <!-- Soical meadia -->
-            <h3>Follow Us</h3>
-            <div class="social-icons">
-                <a href="https://facebook.com/" target="_blank" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://instagram.com/" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://linkedin.com/" target="_blank" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://twitter.com/" target="_blank" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
-                <a href="https://youtube.com/" target="_blank" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
-            </div>
                 
                 <div class="footer-column">
                     <h3>Image Tools</h3>
@@ -1143,14 +1107,13 @@
                         <li><a href="#">Terms of Service</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
-                </div>            
+                </div>
+            </div>
+            
             <div class="copyright">
                 <p>&copy; 2023 EasyFileConvert. All rights reserved.</p>
             </div>
-            <!-- Social Media Column (NEW) -->
-        
-    </div>
-    </div>
+        </div>
     </footer>
 
     <!-- Dark Mode Toggle -->
@@ -1212,5 +1175,6 @@
             alert('Exploring all tools...\n\nThis would navigate to the tools page.');
         });
     </script>
+    
 </body>
 </html>
